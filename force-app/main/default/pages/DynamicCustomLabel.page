@@ -1,0 +1,4 @@
+<apex:page applyBodyTag="false" applyHtmlTag="false" contentType="application/json" showChat="false"
+    showHeader="false" sidebar="false" language="{!$CurrentPage.parameters.language}">
+    {"value": "{!JSENCODE($Label[$CurrentPage.Parameters.labelToFetch])}"}
+</apex:page>
