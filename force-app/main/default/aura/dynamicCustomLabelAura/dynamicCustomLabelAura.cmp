@@ -1,0 +1,16 @@
+<!--
+  @description       : Aura to test the fetching of dynamic custom label.
+  @author            : chayanbatabyal@gmail.com
+  @last modified on  : 10-28-2021
+  @last modified by  : chayanbatabyal@gmail.com
+-->
+<aura:component controller="Utilities" access="global"
+                implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" >
+
+    <aura:attribute name="customLabelAPIName" type="String" default="TEST_CUSTOM_LABEL"/>
+    <aura:attribute name="customLabelValue" type="String"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    The value of custom label is: {!v.customLabelValue}
+</aura:component>
