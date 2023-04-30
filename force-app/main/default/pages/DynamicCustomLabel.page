@@ -1,4 +1,13 @@
+<!--
+  @description       : VF Page to display Dynamic Custom Labels
+  @author            : Chayan Batabyal
+  @last modified on  : 30-04-2023
+  @last modified by  : Chayan Batabyal
+-->
 <apex:page applyBodyTag="false" applyHtmlTag="false" contentType="application/json" showChat="false"
-    showHeader="false" sidebar="false" language="{!$CurrentPage.parameters.language}">
-    {"value": "{!JSENCODE($Label[$CurrentPage.Parameters.labelToFetch])}"}
+    showHeader="false" sidebar="false" language="{!$CurrentPage.parameters.language}"
+    controller="DynamicCustomLabelController">
+        [<apex:repeat value="{!labels}" var="eachLabel">
+            {DQ_VF{!eachLabel}DQ_VF: DQ_VF{!JSENCODE($Label[eachLabel])}DQ_VF},
+        </apex:repeat>]
 </apex:page>

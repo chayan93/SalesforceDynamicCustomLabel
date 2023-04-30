@@ -3,8 +3,13 @@
     <labels>
         <fullName>TEST_CUSTOM_LABEL</fullName>
         <language>en_US</language>
-        <protected>true</protected>
+        <protected>false</protected>
         <shortDescription>TEST_CUSTOM_LABEL</shortDescription>
-        <value>This value was fetched dynamically.</value>
+        <value>&quot;This&quot; is : \ a / complex &apos;
+
+custom LABEL ^ with many diffe`rent chars&apos; &amp; multiple
+new
+
+lines</value>
     </labels>
 </CustomLabels>
