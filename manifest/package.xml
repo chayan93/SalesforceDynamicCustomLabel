@@ -13,5 +13,9 @@
         <members>TEST_CUSTOM_LABEL</members>
         <name>CustomLabel</name>
     </types>
+    <types>
+        <members>Dynamic_Custom_Label</members>
+        <name>PermissionSet</name>
+    </types>
     <version>58.0</version>
 </Package>
