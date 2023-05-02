@@ -1,5 +1,5 @@
 # SalesforceDynamicCustomLabel
-An utility that helps to fetch multiple custom labels dynamically in the preferred language.
+A utility that helps to fetch multiple custom labels dynamically in the preferred language.
 
 ### Introduction:
 Today, in Salesforce a Custom Label could be fetched in the following ways:
@@ -13,7 +13,19 @@ Many a time we need to fetch the value of a custom label dynamically in an apex 
 ### Solution:
 Use the DynamicCustomLabelController.getDynamicCustomLabel method from any Aura/LWC or any other apex class to fetch multiple custom labels dynamically.
 
-> [NOTE]: If translation is enabled in your environment, and you've custom labels in different languages, it can fetch the value as per the user's default language or the supplied language.
+### Note:
+If translation is enabled in your environment, and you've custom labels in different languages, it can fetch the value as per the user's default language or the supplied language.
+
+### Deployment:
+To deploy this to any Sandbox or developer org, please visit [PlayG](https://live.playg.app/play/dynamic-custom-labels) and click on the Deploy button at the top-right.
+
+### Post-Deployment:
+Assign the Dynamic_Custom_Label permission set to any user who'd use this functionality.
+
+### Screenshots:
+![Screenshot 2023-05-02 201715](https://user-images.githubusercontent.com/31616825/235703825-fe4247b3-3f01-422f-963a-9b537f8525d0.png)
+![Screenshot 2023-05-02 201739](https://user-images.githubusercontent.com/31616825/235703865-b12f3f01-a1fd-425c-84e8-5ef8db4cb9e7.png)
+![Screenshot 2023-05-02 202533](https://user-images.githubusercontent.com/31616825/235704502-34de5cd2-8e82-4d8a-91e9-5a8de7ca0e0c.png)
 
 ### Authors: [@chayan93](https://www.github.com/chayan93)
 
